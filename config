@@ -1,0 +1,33 @@
+Host opi
+        HostName opi.local
+        User root
+        IdentityFile ~/.ssh/id_ed2
+        UserKnownHostsFile /dev/null
+        StrictHostKeyChecking off
+
+Host pi
+        HostName opi.local
+        User orangepi
+        IdentityFile ~/.ssh/id_ed2
+        UserKnownHostsFile /dev/null
+        StrictHostKeyChecking off
+
+Host rpi
+        HostName pi5.local
+        UserKnownHostsFile /dev/null
+        StrictHostKeyChecking off
+        User root
+        IdentityFile ~/.ssh/id_ed2
+
+Host pi5
+        HostName pi5.local
+        UserKnownHostsFile /dev/null
+        StrictHostKeyChecking off
+        IdentityFile ~/.ssh/id_ed2
+        User demis
+    
+Host 192.168.*
+        IdentityFile ~/.ssh/id_ed2
+        UserKnownHostsFile /dev/null
+        StrictHostKeyChecking off
+	User root
